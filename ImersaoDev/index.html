@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link rel="stylesheet" href="data.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">Calculadora de média</h1>
+        <p class="page-subtitle">Descubra qual a sua média de nota de todas as provas!</p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+            class="page-logo" alt="">
+        <section class="ficha">
+            <div class="abas">
+                <button class="ativa" data-aba="media">Média</button>
+                <button data-aba="conversor">Conversor</button>
+            </div>
+
+            <div class="conteudos">
+                <div data-conteudo="media">
+                    <form class="form">
+                        <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+                        <input type="text" name="nota1" id="nota1" placeholder="Nota Av1">
+                        <input type="text" name="nota2" id="nota2" placeholder="Nota Av2">
+                    </form>
+                    <button type="submit" onclick="media()">Resultado</button>
+                    <div id="media"></div>
+                </div>
+                <div class="hide" data-conteudo="conversor">
+                    <form class="form">
+                        <input type="text" name="celsius" id="celsius" placeholder="Digite a temperatura em Celsius">
+                    </form>
+                    <button type="submit" onclick="conversor()">Resultado</button>
+                    <div id="conversor"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <script type="text/javascript" src="backdata.js"></script>
+    <script type="text/javascript" src="back.js"></script>
+</body>
+
+</html>
